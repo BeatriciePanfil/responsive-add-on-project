@@ -115,6 +115,8 @@ section {
   border-radius: 5px;
   padding: 5px;
   border: 1px solid #afafaf;
+  display: block;
+  margin: auto;
 }
 .text-center {
   text-align: center;
@@ -153,8 +155,8 @@ section {
 .grid.grid-pinterest {
   margin-top: 20px;
   grid-gap: 30px;
-  justify-items: center;
 }
+
 .btn {
   display: block;
   color: white;
@@ -180,6 +182,7 @@ section {
 }
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 footer {
@@ -213,6 +216,12 @@ footer ul {
 footer li {
   list-style: none;
 }
+@media (max-width: 1200px) {
+  .grid-pinterest.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -232,13 +241,40 @@ footer li {
   section {
     padding: 30px;
   }
+  .img-building {
+    max-width: 600px;
+  }
+
+  .img-responsive,
+  .embed {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .card-header {
+    justify-items: center;
+  }
   .grid {
     grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
+  .grid-pinterest.grid {
+    grid-template-columns: 1fr;
+  }
+  .card-header {
+    grid-template-columns: 1fr 1fr;
+  }
+
   footer h3 {
     font-size: 18px;
   }
   footer p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pinterest-embed {
+    max-width: 200px;
+    max-height: 300px;
   }
 }
