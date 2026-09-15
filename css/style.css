@@ -6,6 +6,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -102,11 +103,54 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
-img {
+.cards-section {
+  background: #f8f8f8;
+}
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+.img-building {
   width: 90%;
   border-radius: 5px;
   padding: 5px;
   border: 1px solid #afafaf;
+}
+.text-center {
+  text-align: center;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #020227e2;
+  text-decoration: none;
 }
 .grid {
   display: grid;
@@ -117,6 +161,9 @@ img {
 }
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
+}
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer {
